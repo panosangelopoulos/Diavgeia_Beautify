@@ -3,6 +3,7 @@
 
 # Custom for Visual Studio
 *.cs     diff=csharp
+*.pyc	diff= Python's files not useful for user
 
 # Standard to msysgit
 *.doc	 diff=astextplain
