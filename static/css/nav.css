@@ -1,0 +1,14 @@
+.navbar-inverse {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 45px;
+  background-color: #43ac6a;
+  margin-bottom: 150px;
+}
+
+.container{
+    margin-top: 40px;
+}

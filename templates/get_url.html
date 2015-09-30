@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block navigation %}
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+          <ul class="nav navbar-nav">
+              <li><a href="/data">Results</a></li>
+              <li class="active"><a href="#">Get<span class="sr-only">(current)</span></a></li>
+
+          </ul>
+      </div>
+{% endblock %}
+{% block title %}Results{% endblock %}
+
+{% block body%}
+    <div class="container">
+    <h3>Ανάλυση συνδέσμου</h3>
+        <div class="jumbotron">
+        <p>
+        Μπορείτε να τοποθετήσετε οποιοδήποτε σύνδεσμο σε μορφή <strong>json</strong> από την <a href="http://diavgeia.gov.gr">Διαύγεια</a>
+        ο οποίος στην συνέχεια θα αναλυθεί και θα αποδωθεί σε πίνακα.
+            <form action="/" method="post">
+                <input id="urlhtml" name="get_my_url"/>
+                <button type="submit" class="btn btn-warning">Analyze</button>
+            </form>
+            <a href="/data" class="btn btn-success">Move to results</a>
+        </p>
+        </div>
+    </div>
+{% endblock %}

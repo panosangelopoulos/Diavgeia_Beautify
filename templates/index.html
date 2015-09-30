@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}Results{% endblock %}
+{{ super() }}
+{% block body%}
+    <div class="container">
+    <h3>Ανάλυση συνδέσμου από Διαύγεια</h3>
+        <a href="/" class="btn btn-info" style="margin-bottom: 5px"><i class="fa fa-refresh"></i> Ανανέωση</a>
+        <a href="{{ url }}" class="btn btn-warning" style="margin-bottom: 5px"><i class="fa fa-download"></i> Download</a>
+        <a href="/" class="btn btn-success" style="margin-bottom: 5px"><i class="fa fa-globe"></i> New Url</a>
+    <table class="table table-hover table-striped" id="table_json">
+        <thead>
+            <tr class="info">
+                <th>#</th>
+                <th>ΑΔΑ</th>
+                <th>Θέμα</th>
+                <th>Σύνδεσμος</th>
+                <th>Κατηγορία</th>
+                <th>Ημερομηνία</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in range(x) %}
+            <tr class="warning">
+                <td>{{ i + 1}}</td>
+                <td>{{ TableAda[i]}}</td>
+                <td>{{ TableSubject[i]}}</td>
+                <td><a href="{{ TabledocumentUrl[i]}}" target="_blank">{{ TabledocumentUrl[i]}}</a></td>
+                <td>{{ TabledecisionTypeLabel[i] }}</td>
+                <td>{{ TableIssueDate[i]}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </div>
+{% endblock %}
