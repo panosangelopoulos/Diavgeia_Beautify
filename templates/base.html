@@ -12,6 +12,7 @@
 
     {#  Custom CSS  #}
     <link rel="stylesheet" href="../static/css/nav.css">
+    <link rel="stylesheet" href="../static/css/input.css">
 
     {#Icons#}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -37,14 +38,14 @@
                   </button>
                   <a class="navbar-brand" href="/">Διαύγεια</a>
                 </div>
-                {% block navigation %}
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-                  <ul class="nav navbar-nav">
-                    <li class="active"><a href="/data">Results<span class="sr-only">(current)</span></a></li>
-                    <li><a href="/">Get</a></li>
-                  </ul>
-                </div>
-                {% endblock %}
+{#                {% block navigation %}#}
+{#                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">#}
+{#                  <ul class="nav navbar-nav">#}
+{#                    <li class="active"><a href="/data">Results<span class="sr-only">(current)</span></a></li>#}
+{#                    <li><a href="/">Get</a></li>#}
+{#                  </ul>#}
+{#                </div>#}
+{#                {% endblock %}#}
               </div>
             </nav>
     {% block body %}
